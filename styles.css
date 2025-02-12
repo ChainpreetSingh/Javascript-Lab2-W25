@@ -1,0 +1,87 @@
+/*   Chainpreet Singh */
+
+html {
+    font-family: 'Roboto', sans-serif; /* Change font to Roboto for a modern look */
+    font-size: 150%; /* Set font size for better readability */
+    background-color: rgb(30, 30, 30); /* Dark gray background */
+    color: rgb(240, 240, 240); /* Light gray text */
+    transition: background-color 0.5s ease; /* Smooth transition for background color */
+}
+
+body {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add padding around the body */
+}
+
+h1 {
+    font-size: 3em; /* Increase heading size */
+    margin-bottom: 20px; /* Space below the heading */
+    color: rgb(255, 255, 255); 
+    text-align: center; /* Center the heading text */
+}
+
+.slider-container {
+    background-color: rgba(50, 50, 50, 0.9); /* Darker semi-transparent background for the slider container */
+    padding: 30px; /* Add padding around the container */
+    border-radius: 15px; /* Rounded corners for the container */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+    display: flex; /* Use flexbox for the slider container */
+    flex-direction: column; /* Stack sliders vertically */
+    align-items: center; /* Center sliders horizontally */
+}
+
+label {
+    display: block; /* Block display for labels */
+    margin: 10px 0; /* Space around labels */
+    font-weight: bold; /* Bold labels */
+    color: rgb(255, 255, 255); /* White color for labels */
+}
+
+input[type="range"] {
+    width: 1000px; /* Set the width of the sliders */
+    margin: 10px 0; /* Space between sliders */
+    -webkit-appearance: none; /* Remove default styling */
+    background: rgb(100, 100, 100); /* Darker background for the slider track */
+    height: 8px; /* Height of the slider track */
+    border-radius: 5px; /* Rounded corners for the track */
+    transition: background 0.3s; /* Smooth transition for background color */
+}
+
+input[type="range"]:hover {
+    background: rgb(150, 150, 150); /* Change track color on hover */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove default styling */
+    appearance: none; /* Remove default styling */
+    width: 20px; /* Width of the slider thumb */
+    height: 20px; /* Height of the slider thumb */
+    border-radius: 50%; /* Make the thumb circular */
+    background: rgb(3, 54, 19); /* Thumb color */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background 0.3s, transform 0.3s; /* Smooth transition for thumb color and size */
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    background: rgb(5, 70, 25); /* Change thumb color on hover */
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px; /* Width of the slider thumb */
+    height: 20px; /* Height of the slider thumb */
+    border-radius: 50%; /* Make the thumb circular */
+    background: rgb(3, 54, 19); /* Thumb color */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background 0.3s, transform 0.3s; /* Smooth transition for thumb color and size */
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+    background: rgb(5, 70, 25); /* Change thumb color on hover */
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
